@@ -199,8 +199,6 @@ void checkIntersections(float cx, float cy, float r) {
     float y2 = lines[i][3];
 
     if (circleTouchesLine(cx, cy, r, x1, y1, x2, y2)) {
-      stroke(0, 255, 0); // Highlight the touching line in green
-      line(x1, y1, x2, y2);
       delay(500);
       reduceLevens();
     }
